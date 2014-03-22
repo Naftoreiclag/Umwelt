@@ -1,4 +1,16 @@
 [
 {
+"modid": "umwelt",
+"name": "Umwelt Client Enhancement",
+"description": "Oooh... Ahhh... Stuff looks different through my eyeballs!",
+"version": "",
+"mcversion": "${mcversion}",
+"url": "n/a",
+"updateUrl": "",
+"authorList": ["Naftoreiclag"],
+"credits": "Naftoreiclag, TrinityKing",
+"logoFile": "logo.png",
+"screenshots": [],
+"dependencies": []
 }
 ]
