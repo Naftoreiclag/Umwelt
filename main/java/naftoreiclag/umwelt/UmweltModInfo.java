@@ -18,6 +18,7 @@ import cpw.mods.fml.common.DummyModContainer;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.LoadController;
 import cpw.mods.fml.common.ModMetadata;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -46,25 +47,5 @@ public class UmweltModInfo extends DummyModContainer
 	{
 		MinecraftForge.EVENT_BUS.register(new Blahblah());
 		return true;
-	}
-	
-	
-
-	@Subscribe
-	public void preInit(FMLPreInitializationEvent e)
-	{
-		System.out.println("pre init");
-	}
-
-	@Subscribe
-	public void init(FMLInitializationEvent e)
-	{
-		System.out.println("init");
-	}
-
-	@Subscribe
-	public void postInit(FMLPostInitializationEvent e)
-	{
-		System.out.println("post init");
 	}
 }

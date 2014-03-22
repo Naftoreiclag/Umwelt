@@ -15,20 +15,23 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class BasicMdo
 {
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
+	public void preInit(FMLPreInitializationEvent e)
 	{
 		HatRegistry.addHat("Reiclag", new JellyfishHat());
 		HatRegistry.addHat("CutiePi", new HaloHat());
+		
+		System.out.println("pre init");
 	}
 
 	@EventHandler
-	public void load(FMLInitializationEvent event)
+	public void init(FMLInitializationEvent e)
 	{
-		System.out.println("success");
+		System.out.println("init");
 	}
 
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent event)
+	public void postInit(FMLPostInitializationEvent e)
 	{
+		System.out.println("post init");
 	}
 }

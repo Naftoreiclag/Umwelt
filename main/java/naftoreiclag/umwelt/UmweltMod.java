@@ -3,8 +3,8 @@ package naftoreiclag.umwelt;
 import java.util.Map;
 
 import net.minecraft.launchwrapper.IClassTransformer;
-
 import cpw.mods.fml.common.DummyModContainer;
+import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.relauncher.IFMLCallHook;
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
