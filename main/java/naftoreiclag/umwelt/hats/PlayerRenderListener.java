@@ -1,10 +1,9 @@
-package naftoreiclag.umwelt;
+package naftoreiclag.umwelt.hats;
 
-import naftoreiclag.umwelt.hats.HatRegistry;
 import net.minecraftforge.client.event.RenderPlayerEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
-public class Blahblah
+public class PlayerRenderListener
 {
 	@SubscribeEvent
 	public void onRenderPlayer(RenderPlayerEvent.Specials.Post event)

@@ -5,6 +5,7 @@ import java.util.Map;
 import naftoreiclag.umwelt.hats.HaloHat;
 import naftoreiclag.umwelt.hats.HatRegistry;
 import naftoreiclag.umwelt.hats.JellyfishHat;
+import naftoreiclag.umwelt.hats.PlayerRenderListener;
 import net.minecraft.launchwrapper.IClassTransformer;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.DummyModContainer;
@@ -19,6 +20,7 @@ import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 @Mod(modid = "umwelt", name = "Umwelt Client Enhancement", version = "0.0.0")
 public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCallHook
 {
+	// Is this the obfuscated environment
 	protected static boolean obfuscated;
 	
 	// Tell Forge that I'll be doing all of these things
@@ -31,7 +33,7 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 	@Override
 	public String getAccessTransformerClass() { return null; } // Except this one
 
-	// ???
+	// What is this??? DO NOT GET RID OF IT
 	@Override
 	public Void call() { return null; }
 	
@@ -39,6 +41,8 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 	@Override
 	public void injectData(Map<String, Object> mcdata)
 	{
+		// Check if we are obfuscated
+		
 		Object o = mcdata.get("runtimeDeobfuscationEnabled");
 		
 		if(o == null)
@@ -58,15 +62,19 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 		if(className.equals("net.minecraft.client.renderer.entity.RenderPlayer"))
 		{
 			return Earsforme.apply(basicClass, false);
-		}*/
+		}
+		*/
 		
 		return basicClass;
 	}
 	
+	// Pre Initialize
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e)
 	{
-		MinecraftForge.EVENT_BUS.register(new Blahblah());
+		// Gotta have those hats
+		
+		MinecraftForge.EVENT_BUS.register(new PlayerRenderListener());
 		
 		HatRegistry.addHat("Reiclag", new JellyfishHat());
 		HatRegistry.addHat("CutiePi", new HaloHat());
@@ -74,12 +82,14 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 		System.out.println("pre init");
 	}
 
+	// Initialize
 	@EventHandler
 	public void init(FMLInitializationEvent e)
 	{
 		System.out.println("init");
 	}
 
+	// Post Initialize
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent e)
 	{
