@@ -6,6 +6,7 @@ import naftoreiclag.umwelt.hats.HaloHat;
 import naftoreiclag.umwelt.hats.HatRegistry;
 import naftoreiclag.umwelt.hats.JellyfishHat;
 import net.minecraft.launchwrapper.IClassTransformer;
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.DummyModContainer;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -15,7 +16,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.relauncher.IFMLCallHook;
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
-@Mod(modid = "aaaaaa", name = "ffewfewfewfsad", version = "0.0.0")
+@Mod(modid = "umwelt", name = "Umwelt Client Enhancement", version = "0.0.0")
 public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCallHook
 {
 	protected static boolean obfuscated;
@@ -24,7 +25,7 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 	@Override
 	public String[] getASMTransformerClass() { return new String[] { UmweltMod.class.getName() }; } // Transformer
 	@Override
-	public String getModContainerClass() { return UmweltModInfo.class.getName(); } // Mod list entry
+	public String getModContainerClass() { return null; } // Mod list entry
 	@Override
 	public String getSetupClass() { return UmweltMod.class.getName(); } // Super-early Initializer
 	@Override
@@ -65,6 +66,8 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e)
 	{
+		MinecraftForge.EVENT_BUS.register(new Blahblah());
+		
 		HatRegistry.addHat("Reiclag", new JellyfishHat());
 		HatRegistry.addHat("CutiePi", new HaloHat());
 		
