@@ -77,25 +77,4 @@ public class Blahblah
         GL11.glPopMatrix();
 	}
 	*/
-	
-	/*
-	@SubscribeEvent
-	public void onLivingUpdateEvent(LivingUpdateEvent event)
-	{
-		// do something to player every update tick:
-		if (event.entity instanceof EntityPlayer)
-		{
-			EntityPlayer player = (EntityPlayer) event.entity;
-			ItemStack heldItem = player.getHeldItem();
-			if (heldItem != null)
-			{
-				player.capabilities.allowFlying = true;
-			}
-			else
-			{
-				player.capabilities.allowFlying = player.capabilities.isCreativeMode ? true : false;
-			}
-		}
-	}
-	*/
 }

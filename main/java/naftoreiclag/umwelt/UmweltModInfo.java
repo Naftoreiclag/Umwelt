@@ -2,6 +2,9 @@ package naftoreiclag.umwelt;
 
 import java.util.Arrays;
 
+import naftoreiclag.umwelt.hats.HaloHat;
+import naftoreiclag.umwelt.hats.HatRegistry;
+import naftoreiclag.umwelt.hats.JellyfishHat;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.RenderPlayerEvent;
@@ -37,22 +40,14 @@ public class UmweltModInfo extends DummyModContainer
 		data.logoFile = "";
 	}
 
+	
 	@Override
 	public boolean registerBus(EventBus eventBus, LoadController _)
 	{
-		//System.out.println("something event bus");
-		
-		//MinecraftForge.EVENT_BUS.register(new Blahblah());
-		
-		eventBus.register(this);
-		//MinecraftForge.EVENT_BUS.register(this);
-		//FMLCommonHandler.instance().bus().register(this);
-		
-		//eventBus.register(new Blahblah());
-		
+		MinecraftForge.EVENT_BUS.register(new Blahblah());
 		return true;
 	}
-
+	
 	
 
 	@Subscribe

@@ -7,6 +7,6 @@ public class JellyfishHat extends Hat
 {
 	public JellyfishHat()
 	{
-		super(new JellyfishHatModel(), new ResourceLocation("umwelt:textures/models/jellyfish.png"));
+		super(new JellyfishHatModel(), new ResourceLocation("umwelt:textures/models/hats/jellyfish.png"));
 	}
 }

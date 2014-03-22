@@ -19,8 +19,7 @@ public class BasicMdo
 	{
 		HatRegistry.addHat("Reiclag", new JellyfishHat());
 		HatRegistry.addHat("CutiePi", new HaloHat());
-		
-		MinecraftForge.EVENT_BUS.register(new Blahblah());
+
 	}
 
 	@EventHandler

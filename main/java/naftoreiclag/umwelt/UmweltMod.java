@@ -2,19 +2,9 @@ package naftoreiclag.umwelt;
 
 import java.util.Map;
 
-import naftoreiclag.umwelt.patches.ChickenLureFixPatcher;
-import naftoreiclag.umwelt.patches.Earsforme;
 import net.minecraft.launchwrapper.IClassTransformer;
-import net.minecraftforge.client.event.RenderPlayerEvent;
-
-import com.google.common.eventbus.Subscribe;
 
 import cpw.mods.fml.common.DummyModContainer;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.relauncher.IFMLCallHook;
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 

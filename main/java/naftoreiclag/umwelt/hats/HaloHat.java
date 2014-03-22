@@ -7,6 +7,6 @@ public class HaloHat extends Hat
 {
 	public HaloHat()
 	{
-		super(new HaloHatModel(), new ResourceLocation("umwelt:textures/models/halo.png"));
+		super(new HaloHatModel(), new ResourceLocation("umwelt:textures/models/hats/halo.png"));
 	}
 }
