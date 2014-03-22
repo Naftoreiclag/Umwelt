@@ -19,7 +19,6 @@ public class BasicMdo
 	{
 		HatRegistry.addHat("Reiclag", new JellyfishHat());
 		HatRegistry.addHat("CutiePi", new HaloHat());
-
 	}
 
 	@EventHandler
