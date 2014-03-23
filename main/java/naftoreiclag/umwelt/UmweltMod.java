@@ -5,6 +5,7 @@ import java.util.Map;
 import naftoreiclag.umwelt.hats.AngelCostume;
 import naftoreiclag.umwelt.hats.HaloHat;
 import naftoreiclag.umwelt.hats.HatRegistry;
+import naftoreiclag.umwelt.hats.HellHornsHat;
 import naftoreiclag.umwelt.hats.JellyfishHat;
 import naftoreiclag.umwelt.hats.PlayerRenderListener;
 import naftoreiclag.umwelt.hats.RoyalCloak;
@@ -79,9 +80,9 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 		MinecraftForge.EVENT_BUS.register(new PlayerRenderListener());
 		
 		HatRegistry.addHat("Reiclag", new JellyfishHat());
-		HatRegistry.addHat("CutiePi", new HaloHat());
-		//HatRegistry.addHat("TrinityKing_", new RoyalCloak());
-		HatRegistry.addHat("TrinityKing_", new AngelCostume());
+		HatRegistry.addHat("CutiePi", new AngelCostume());
+		HatRegistry.addHat("TrinityKing_", new RoyalCloak());
+		HatRegistry.addHat("NanoStar12", new HellHornsHat());
 		
 		System.out.println("pre init");
 	}
