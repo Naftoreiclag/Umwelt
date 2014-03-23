@@ -6,6 +6,7 @@ import naftoreiclag.umwelt.hats.HaloHat;
 import naftoreiclag.umwelt.hats.HatRegistry;
 import naftoreiclag.umwelt.hats.JellyfishHat;
 import naftoreiclag.umwelt.hats.PlayerRenderListener;
+import naftoreiclag.umwelt.hats.RoyalCloak;
 import net.minecraft.launchwrapper.IClassTransformer;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.DummyModContainer;
@@ -78,6 +79,7 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 		
 		HatRegistry.addHat("Reiclag", new JellyfishHat());
 		HatRegistry.addHat("CutiePi", new HaloHat());
+		HatRegistry.addHat("TrinityKing_", new RoyalCloak());
 		
 		System.out.println("pre init");
 	}

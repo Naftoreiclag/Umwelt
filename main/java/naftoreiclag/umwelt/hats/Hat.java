@@ -21,6 +21,11 @@ public abstract class Hat
 	
 	public void render(EntityPlayer player, float prt)
 	{
+		if(player.isInvisible())
+		{
+			return;
+		}
+		
 		float sideToSide = player.prevRotationYaw + (player.rotationYaw - player.prevRotationYaw) * prt - (player.prevRenderYawOffset + (player.renderYawOffset - player.prevRenderYawOffset) * prt);
 		float lookUpAndDown = player.prevRotationPitch + (player.rotationPitch - player.prevRotationPitch) * prt;
 
