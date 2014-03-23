@@ -13,11 +13,16 @@ public class AngelWings extends Hat
 	double flappy;
 	long lastTime;
 	
-	public AngelWings()
+	public AngelWings(ResourceLocation texture)
 	{
-		super(new AngelWingsModel(), new ResourceLocation("umwelt:textures/models/hats/angelWings.png"));
+		super(new AngelWingsModel(), texture);
 	
 		lastTime = Minecraft.getSystemTime();
+	}
+	
+	public AngelWings()
+	{
+		this(new ResourceLocation("umwelt:textures/models/hats/angelWings.png"));
 	}
 	
 	public void render(EntityPlayer player, float prt)
