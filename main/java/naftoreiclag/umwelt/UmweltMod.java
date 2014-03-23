@@ -2,6 +2,7 @@ package naftoreiclag.umwelt;
 
 import java.util.Map;
 
+import naftoreiclag.umwelt.hats.AngelCostume;
 import naftoreiclag.umwelt.hats.HaloHat;
 import naftoreiclag.umwelt.hats.HatRegistry;
 import naftoreiclag.umwelt.hats.JellyfishHat;
@@ -79,7 +80,8 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 		
 		HatRegistry.addHat("Reiclag", new JellyfishHat());
 		HatRegistry.addHat("CutiePi", new HaloHat());
-		HatRegistry.addHat("TrinityKing_", new RoyalCloak());
+		//HatRegistry.addHat("TrinityKing_", new RoyalCloak());
+		HatRegistry.addHat("TrinityKing_", new AngelCostume());
 		
 		System.out.println("pre init");
 	}

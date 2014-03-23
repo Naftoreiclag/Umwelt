@@ -25,10 +25,6 @@ public class RoyalCloak extends Hat
 			return;
 		}
 		
-		float sideToSide = player.prevRotationYaw + (player.rotationYaw - player.prevRotationYaw) * prt - (player.prevRenderYawOffset + (player.renderYawOffset - player.prevRenderYawOffset) * prt);
-		float lookUpAndDown = player.prevRotationPitch + (player.rotationPitch - player.prevRotationPitch) * prt;
-
-        GL11.glPushMatrix();
         double d3 = player.field_71091_bM + (player.field_71094_bP - player.field_71091_bM) * (double)prt - (player.prevPosX + (player.posX - player.prevPosX) * (double)prt);
         double d4 = player.field_71096_bN + (player.field_71095_bQ - player.field_71096_bN) * (double)prt - (player.prevPosY + (player.posY - player.prevPosY) * (double)prt);
         double d0 = player.field_71097_bO + (player.field_71085_bR - player.field_71097_bO) * (double)prt - (player.prevPosZ + (player.posZ - player.prevPosZ) * (double)prt);
@@ -66,6 +62,7 @@ public class RoyalCloak extends Hat
 		
 		Minecraft.getMinecraft().renderEngine.bindTexture(textures);
 
+        GL11.glPushMatrix();
         GL11.glRotatef(6.0F + f7 / 2.0F + f6, 1.0F, 0.0F, 0.0F);
         GL11.glRotatef(f8 / 2.0F, 0.0F, 0.0F, 1.0F);
         GL11.glRotatef(-f8 / 2.0F, 0.0F, 1.0F, 0.0F);
