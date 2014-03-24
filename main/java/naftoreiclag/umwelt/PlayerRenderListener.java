@@ -1,5 +1,6 @@
-package naftoreiclag.umwelt.hats;
+package naftoreiclag.umwelt;
 
+import naftoreiclag.umwelt.hats.HatRegistry;
 import net.minecraftforge.client.event.RenderPlayerEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 

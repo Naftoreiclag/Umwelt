@@ -11,7 +11,6 @@ import naftoreiclag.umwelt.hats.HaloHat;
 import naftoreiclag.umwelt.hats.HatRegistry;
 import naftoreiclag.umwelt.hats.HellHornsHat;
 import naftoreiclag.umwelt.hats.JellyfishHat;
-import naftoreiclag.umwelt.hats.PlayerRenderListener;
 import naftoreiclag.umwelt.hats.RoyalCloak;
 import net.minecraft.launchwrapper.IClassTransformer;
 import net.minecraftforge.common.MinecraftForge;
