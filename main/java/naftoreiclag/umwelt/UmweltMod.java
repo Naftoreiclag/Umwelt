@@ -11,6 +11,8 @@ import naftoreiclag.umwelt.hats.HaloHat;
 import naftoreiclag.umwelt.hats.HatRegistry;
 import naftoreiclag.umwelt.hats.HellHornsHat;
 import naftoreiclag.umwelt.hats.JellyfishHat;
+import naftoreiclag.umwelt.hats.Jinmori;
+import naftoreiclag.umwelt.hats.MonkeyCostume;
 import naftoreiclag.umwelt.hats.RoyalCloak;
 import net.minecraft.launchwrapper.IClassTransformer;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,7 +25,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.relauncher.IFMLCallHook;
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
-@Mod(modid = "umwelt", name = "Umwelt Client Enhancement", version = "0.0.0")
+@Mod(modid = "umwelt", name = "Umwelt Client Enhancement", version = "0.2.0")
 public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCallHook
 {
 	// Is this the obfuscated environment
@@ -88,6 +90,8 @@ public class UmweltMod implements IFMLLoadingPlugin, IClassTransformer, IFMLCall
 		HatRegistry.addHat("NanoStar12", new DemonCostume());
 		HatRegistry.addHat("tofupie", new DarkAngelWings());
 		HatRegistry.addHat("Fluffy_Unicorn19", new FairyCostume());
+		HatRegistry.addHat("BladerX7", new Jinmori());
+		HatRegistry.addHat("Travis315", new MonkeyCostume());
 		
 		System.out.println("pre init");
 	}
